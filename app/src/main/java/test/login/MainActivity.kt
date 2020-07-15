@@ -121,6 +121,10 @@ class MainActivity : AppCompatActivity() {
                 signInBtn.isEnabled = true
                 signInBtn.setBackgroundResource(R.drawable.btn_active)
             }
+            else {
+                signInBtn.isEnabled = false
+                signInBtn.setBackgroundResource(R.drawable.btn_inactive)
+            }
         } else {
             signInBtn.isEnabled = false
             signInBtn.setBackgroundResource(R.drawable.btn_inactive)
